@@ -25,7 +25,7 @@ export default function Navigation(props) {
           <ul>
             <li><strong>Sourav Ukil</strong></li>
           </ul>
-          <ul className={`navbar--items ${navValue} mbl-${props.selectedTheme}`}>
+          <code className={`navbar--items ${navValue}`}>
             <li onClick={toggleNavigationBar}><Link to="/">{props.navNames.Home}</Link></li>
             <li onClick={toggleNavigationBar}><Link to={props.path.about}>{props.navNames.About}</Link></li>
             <li onClick={toggleNavigationBar}><Link to={props.path.portfolio}>{props.navNames.Portfolio}</Link></li>
@@ -34,7 +34,7 @@ export default function Navigation(props) {
             onChange={props.handleTheme}
             defaultChecked={props.selectedTheme === 'data-dark'}
             />
-          </ul>
+          </code>
           <ul className='toggle--btn--ul'>
             <li onClick={toggleNavigationBar} className={`toggle--btn ${navMenuFixed}`}>
               <FiAlignLeft />
