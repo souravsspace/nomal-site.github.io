@@ -5,7 +5,7 @@ import Footer from './components/Footer'
 import Portfolio from './components/Portfolio'
 import About from './components/About'
 import Contact from './components/Contact'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 
 const navNames = {
@@ -42,7 +42,6 @@ function App() {
   return (
     <Router>
       <Navigation navNames={navNames} handleTheme={handleTheme} selectedTheme={selectedTheme} />
-      <HomeMain />
         <Routes>
           <Route exact path='/' element={<HomeMain />} />
           <Route exact path='/portfolio' element={<Portfolio  />} />
