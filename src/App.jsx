@@ -17,6 +17,13 @@ const navNames = {
 
 function App() {
   
+  const path = {
+    home: 'nomal-site.github.io/',
+    portfolio: 'nomal-site.github.io/portfolio',
+    about: 'nomal-site.github.io/about',
+    contact: 'nomal-site.github.io/contact'
+
+  }
 
   const handleTheme = ()=> { 
     const html = document.body.parentNode.classList
@@ -41,15 +48,15 @@ function App() {
 
   return (
     <Router>
-      <Navigation navNames={navNames} handleTheme={handleTheme} selectedTheme={selectedTheme} />
+      <Navigation path={path} navNames={navNames} handleTheme={handleTheme} selectedTheme={selectedTheme} />
         <Routes>
-          <Route exact path='*' element={<HomeMain/>} />
-          <Route exact path='/' element={<HomeMain />} />
-          <Route exact path='/portfolio' element={<Portfolio  />} />
-          <Route exact path='/about' element={<About  />} />
-          <Route exact path='/contact' element={<Contact  />} />
+          <Route exact path='*' element={<HomeMain />} />
+          <Route exact path={path.home} element={<HomeMain />} />
+          <Route exact path={path.portfolio} element={<Portfolio />} />
+          <Route exact path={path.about} element={<About />} />
+          <Route exact path={path.contact} element={<Contact />} />
         </Routes>
-        <Footer navNames={navNames}  />
+        <Footer path={path} navNames={navNames}  />
     </Router> 
   )
 }

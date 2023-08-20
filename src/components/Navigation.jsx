@@ -18,9 +18,9 @@ export default function Navigation(props) {
           </ul>
           <ul className={`navbar--items ${navValue}`}>
             <li onClick={toggleNavigationBar}><Link to="/">{props.navNames.Home}</Link></li>
-            <li onClick={toggleNavigationBar}><Link to="/about">{props.navNames.About}</Link></li>
-            <li onClick={toggleNavigationBar}><Link to="/portfolio">{props.navNames.Portfolio}</Link></li>
-            <li onClick={toggleNavigationBar}><Link to="/contact" role="button">{props.navNames.Contact}</Link></li>
+            <li onClick={toggleNavigationBar}><Link to={props.path.about}>{props.navNames.About}</Link></li>
+            <li onClick={toggleNavigationBar}><Link to={props.path.portfolio}>{props.navNames.Portfolio}</Link></li>
+            <li onClick={toggleNavigationBar}><Link to={props.path.contact} role="button">{props.navNames.Contact}</Link></li>
             <input type="checkbox" role="switch" 
             onChange={props.handleTheme}
             defaultChecked={props.selectedTheme === 'data-dark'}
