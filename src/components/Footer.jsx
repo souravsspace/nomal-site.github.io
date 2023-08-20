@@ -5,7 +5,7 @@ export default function Footer(props) {
   return (
     <code className='container-fluid' style={{paddingBlock:'1rem'}}>
       <nav className='container-fluid'>
-          <ul className='container'>
+          <ul className='container footer--nav-items'>
             <Link style={{marginInline:"1rem"}} to="/">{props.navNames.Home}</Link>
             <Link style={{marginInline:"1rem"}} to="/about">{props.navNames.About}</Link>
             <Link style={{marginInline:"1rem"}} to="/portfolio">{props.navNames.Portfolio}</Link>

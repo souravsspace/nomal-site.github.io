@@ -43,6 +43,7 @@ function App() {
     <Router>
       <Navigation navNames={navNames} handleTheme={handleTheme} selectedTheme={selectedTheme} />
         <Routes>
+          <Route exact path='*' element={<HomeMain/>} />
           <Route exact path='/' element={<HomeMain />} />
           <Route exact path='/portfolio' element={<Portfolio  />} />
           <Route exact path='/about' element={<About  />} />
