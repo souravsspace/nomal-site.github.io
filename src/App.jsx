@@ -42,6 +42,7 @@ function App() {
   return (
     <Router>
       <Navigation navNames={navNames} handleTheme={handleTheme} selectedTheme={selectedTheme} />
+      <HomeMain />
         <Routes>
           <Route exact path='/' element={<HomeMain />} />
           <Route exact path='/portfolio' element={<Portfolio  />} />
