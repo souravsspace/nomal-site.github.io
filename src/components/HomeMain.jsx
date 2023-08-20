@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function home() {
   return (
-    <div className='container' style={{marginBlock:'6rem'}}>
+    <div id='homePage' className='container' style={{marginBlock:'6rem'}}>
         <div className="grid">
           <div>
             <hgroup>
@@ -17,7 +17,9 @@ export default function home() {
                 <li>Might even help you live longer</li>
               </ul>
           </div>
-          <img src="https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-reading-a-book-studying-man-image_1309504.jpg"/>
+          <dir>
+            <img src="https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-reading-a-book-studying-man-image_1309504.jpg"/>
+          </dir>
         </div>
     </div>
   )

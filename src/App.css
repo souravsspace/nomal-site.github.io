@@ -1,3 +1,8 @@
+#homePage div img {
+  max-width: 100%;
+  width: 400px;
+  border-radius: 10px;
+}
 
 #portfolio img {
   max-width: 100%;
@@ -5,6 +10,7 @@
   aspect-ratio: 3/2;
   object-fit: cover;
   object-position: center;
+  border-radius: 10px;
 }
 
 #portfolio article div hgroup{
@@ -47,15 +53,6 @@
     color:#11191f;
     background-color:hsl(0, 0%, 100%);
   }
-  /* .mbl--nav--dark {
-    background-color:#11191f;
-    color:hsl(0, 0%, 100%);
-  }
-
-  .mbl--nav--light {
-    color:#11191f;
-    background-color:hsl(0, 0%, 100%);
-  } */
   
   .hide {
     transform: translateX(100%);
