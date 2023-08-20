@@ -9,7 +9,7 @@ export default function Navigation(props) {
             <li><strong>Sourav Ukil</strong></li>
           </ul>
           <ul>
-            <li><Link to="/home">{props.navNames.Home}</Link></li>
+            <li><Link to="/">{props.navNames.Home}</Link></li>
             <li><Link to="/about">{props.navNames.About}</Link></li>
             <li><Link to="/portfolio">{props.navNames.Portfolio}</Link></li>
             <li><Link to="/contact" role="button">{props.navNames.Contact}</Link></li>
