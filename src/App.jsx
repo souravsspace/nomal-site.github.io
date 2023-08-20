@@ -46,17 +46,26 @@ function App() {
   }
 
 
+
   return (
     <Router>
-      <Navigation path={path} navNames={navNames} handleTheme={handleTheme} selectedTheme={selectedTheme} />
+        <Navigation 
+            path={path} 
+            navNames={navNames} 
+            handleTheme={handleTheme} 
+            selectedTheme={selectedTheme} 
+        />
         <Routes>
-          <Route exact path='*' element={<HomeMain />} />
-          <Route exact path={path.home} element={<HomeMain />} />
-          <Route exact path={path.portfolio} element={<Portfolio />} />
-          <Route exact path={path.about} element={<About />} />
-          <Route exact path={path.contact} element={<Contact />} />
+            <Route exact path='*' element={<HomeMain />} />
+            <Route exact path={path.home} element={<HomeMain />} />
+            <Route exact path={path.portfolio} element={<Portfolio />} />
+            <Route exact path={path.about} element={<About />} />
+            <Route exact path={path.contact} element={<Contact />} />
         </Routes>
-        <Footer path={path} navNames={navNames}  />
+        <Footer 
+            path={path} 
+            navNames={navNames}  
+        />
     </Router> 
   )
 }
