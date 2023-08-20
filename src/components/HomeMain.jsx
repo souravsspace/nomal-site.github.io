@@ -17,9 +17,9 @@ export default function home() {
                 <li>Might even help you live longer</li>
               </ul>
           </div>
-          <dir>
-            <img src="https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-reading-a-book-studying-man-image_1309504.jpg"/>
-          </dir>
+
+          <img src="https://png.pngtree.com/element_our/20190531/ourlarge/pngtree-reading-a-book-studying-man-image_1309504.jpg"/>
+
         </div>
     </div>
   )
